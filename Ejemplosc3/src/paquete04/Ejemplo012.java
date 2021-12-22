@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete02;
+package paquete04;
 
 import java.util.Scanner;
 
@@ -11,18 +11,18 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo01 {
+public class Ejemplo012 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int valorIngresado;
-        int[][] arreglo1 = new int[2][2];
+        String valorIngresado;
+        String[][] arreglo1 = new String[2][2];
         // i = fila
         // j = columna
         System.out.println("Presentación de valores iniciales del arreglo");
         for (int i = 0; i < arreglo1.length; i++) {
             for (int j = 0; j < arreglo1[i].length; j++) {
-                System.out.printf("%d\n", arreglo1[i][j]);
+                System.out.printf("%s\n", arreglo1[i][j]);
             }
             System.out.println(); // salto de línea
         }
@@ -32,7 +32,7 @@ public class Ejemplo01 {
             for (int j = 0; j < arreglo1[i].length; j++) {
                 System.out.printf("Ingrese valor para la posición [%d][%d]\t:",
                         i, j);
-                valorIngresado = entrada.nextInt();
+                valorIngresado = entrada.nextLine();
                 arreglo1[i][j] = valorIngresado;
             }
             System.out.println(); // salto de línea
